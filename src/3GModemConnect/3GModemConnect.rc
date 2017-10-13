@@ -1,0 +1,366 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\My3GModemConnect.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\3GModemConnect.ico"
+IDI_ICON_EDEG1          ICON                    "res\\iconEDEG1.ico"
+IDI_ICON_EDEG2          ICON                    "res\\iconEDEG2.ico"
+IDI_ICON_EDEG3          ICON                    "res\\iconEDEG3.ico"
+IDI_ICON_EDEG4          ICON                    "res\\iconEDEG4.ico"
+IDI_ICON_EDEG5          ICON                    "res\\iconEDEG5.ico"
+IDI_ICON_HSDPA1         ICON                    "res\\iconHSDPA1.ico"
+IDI_ICON_HSDPA3         ICON                    "res\\iconHSDPA3.ico"
+IDI_ICON_HSDPA4         ICON                    "res\\iconHSDPA4.ico"
+IDI_ICON_HSDPA5         ICON                    "res\\iconHSDPA5.ico"
+IDI_ICON_WCDMA1         ICON                    "res\\iconWCDMA1.ico"
+IDI_ICON_WCDMA2         ICON                    "res\\iconWCDMA2.ico"
+IDI_ICON_WCDMA3         ICON                    "res\\iconWCDMA3.ico"
+IDI_ICON_WCDMA4         ICON                    "res\\iconWCDMA4.ico"
+IDI_ICON_WCDMA5         ICON                    "res\\iconWCDMA5.ico"
+IDI_ICON_HSDPA2         ICON                    "res\\iconHSDPA2.ico"
+IDI_ICON_NA             ICON                    "res\\icon2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 196, 157
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About 3GModemConnect"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "3G Modem Connect, Version 0.6",IDC_STATIC,42,14,147,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,42,27,147,8
+    DEFPUSHBUTTON   "OK",IDOK,139,136,50,14,WS_GROUP
+    LTEXT           "Author: Amro Fawzy",IDC_STATIC,42,40,147,8
+    LTEXT           "Email: redfox2200@hotmail.com",IDC_STATIC,42,53,147,8
+    LTEXT           "User Interface Design:",IDC_STATIC,42,66,147,8
+    LTEXT           "Zaki Fachromi",IDC_STATIC,42,79,147,8
+    LTEXT           "Email: romiez.fach@yahoo.com",IDC_STATIC,42,92,147,8
+    LTEXT           "Calvin Lichty",IDC_STATIC,42,105,147,8
+    LTEXT           "Email: four13designs@optusnet.com.au",IDC_STATIC,42,118,147,8
+END
+
+IDD_MY3GMODEMCONNECT_DIALOG DIALOGEX 0, 0, 216, 275
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "3G Modem Connect"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Connect",IDC_BUTTON_CONNECT,136,73,72,20
+    PUSHBUTTON      "?",IDC_BUTTON_EXPAND,199,57,9,6,NOT WS_VISIBLE
+    PUSHBUTTON      "Apply",IDC_BUTTON_APPLY_SIGNAL_MODE,162,167,45,15
+    PUSHBUTTON      "Apply",IDC_BUTTON_APN_APPLY,162,183,45,15
+    GROUPBOX        "Login",IDC_STATIC_LOGIN,2,124,212,77
+    GROUPBOX        "Modem Info",IDC_STATIC,2,206,212,67
+    GROUPBOX        "Details",IDC_STATIC,2,59,212,62
+    COMBOBOX        IDC_COMBO_PROFILES,68,97,140,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CON_MODE,35,167,59,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CON_BAND,100,167,59,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_USER,8,148,109,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,120,148,87,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_APN,35,183,123,14,ES_AUTOHSCROLL
+    LTEXT           "Operator:",IDC_STATIC_TXT_OPERATOR,9,4,33,8
+    LTEXT           "Mode:",IDC_STATIC_TXT_MODE,8,169,21,8
+    LTEXT           "Profile:",IDC_STATIC_TXT_PROFILE,9,97,24,8
+    LTEXT           "User Name:",IDC_STATIC_TXT_USER,8,138,38,8
+    LTEXT           "Password:",IDC_STATIC_TXT_PASSWORD,120,138,34,8
+    LTEXT           "APN:",IDC_STATIC_TXT_APN,8,184,17,8
+    LTEXT           "Download",IDC_STATIC_TXT_DOWNLOAD,103,4,48,8,0,WS_EX_RIGHT
+    LTEXT           "Upload",IDC_STATIC_TXT_UPLOAD,167,4,41,8,0,WS_EX_RIGHT
+    LTEXT           "Duration:",IDC_STATIC_TXT_DURATION,9,34,38,8
+    LTEXT           "Downloaded:",IDC_STATIC_TXT_DOWNLOADED,9,73,46,8
+    LTEXT           "Uploaded:",IDC_STATIC_TXT_UPLOADED,9,85,34,8
+    LTEXT           "00:00:00",IDC_STATIC_DURATION,51,34,40,8
+    LTEXT           "0 KB",IDC_STATIC_DOWNLOADED,68,73,33,8
+    LTEXT           "0 KB",IDC_STATIC_UPLOADED,68,85,30,8
+    LTEXT           "0",IDC_STATIC_DOWNLOAD,101,16,50,18,0,WS_EX_RIGHT
+    LTEXT           "0",IDC_STATIC_UPLOAD,162,16,46,18,0,WS_EX_RIGHT
+    LTEXT           "UMTS",IDC_STATIC_MODE,84,46,30,8
+    LTEXT           "Fair",IDC_STATIC_SIGNAL,124,46,27,8
+    LTEXT           "NA",IDC_STATIC_PROVIDER,9,16,88,18
+    LTEXT           "Port:",IDC_STATIC_TXT_PORT,9,220,17,8
+    LTEXT           "NA",IDC_STATIC_PORT,67,219,47,8
+    LTEXT           "Manufacturer:",IDC_STATIC_TXT_MANUFACTURER,9,233,47,8
+    LTEXT           "NA",IDC_STATIC_MANUFACTURER,67,232,54,8
+    LTEXT           "Model:",IDC_STATIC_TXT_MODEL,9,245,22,8
+    LTEXT           "NA",IDC_STATIC_MODEL,67,244,81,8
+    LTEXT           "IMEI:",IDC_STATIC_TXT_IMEI,189,220,18,8
+    LTEXT           "Firmware:",IDC_STATIC_TXT_FIRMWARE,9,257,33,8
+    LTEXT           "Hardware:",IDC_STATIC_TXT_HARDWARE,169,245,35,8
+    LTEXT           "NA",IDC_STATIC_FIRMWARE,67,258,64,8
+    LTEXT           "NA",IDC_STATIC_IMEI,138,233,69,8,0,WS_EX_RIGHT
+    LTEXT           "NA",IDC_STATIC_HARDWARE,138,258,69,8,0,WS_EX_RIGHT
+    LTEXT           "kb/s",IDC_STATIC_TXT_KBDOWNLOAD,135,34,14,8
+    LTEXT           "kb/s",IDC_STATIC_TXT_KBUPLOAD,194,34,14,8,0,WS_EX_RIGHT
+    LTEXT           "Disconnected",IDC_STATIC_STATUS,9,46,61,8
+    LTEXT           "0%",IDC_STATIC_PERCENTAGE,185,46,23,8,0,WS_EX_RIGHT
+END
+
+IDD_DIALOG_TRAFFIC DIALOGEX 0, 0, 143, 60
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOPMOST | WS_EX_TOOLWINDOW | WS_EX_LAYERED
+CAPTION "Traffic"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATIC_TRAFFIC,0,0,143,60
+END
+
+IDD_DIALOG_HISTORY DIALOGEX 0, 0, 316, 214
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "History"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,252,193,50,14
+    CONTROL         "",IDC_DATETIMEPICKER_START,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_TABSTOP,14,14,135,15
+    CONTROL         "",IDC_DATETIMEPICKER_END,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_TABSTOP,167,14,135,15
+    CONTROL         "",IDC_LIST_HISTORY,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,51,288,136
+    LTEXT           "Total Downloaded : 0",IDC_STATIC_HISTORY_DOWNLOADED,14,36,135,8
+    LTEXT           "Total Uploaded : 0",IDC_STATIC_HISTORY_UPLOADED,167,36,135,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "3G Modem Connect"
+            VALUE "FileDescription", "3G Modem Connect"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "3GModemConnect.exe"
+            VALUE "LegalCopyright", "(c) 3G Modem Connect.  All rights reserved."
+            VALUE "OriginalFilename", "3GModemConnect.exe"
+            VALUE "ProductName", "3G Modem Connect"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_MY3GMODEMCONNECT_DIALOG, DIALOG
+    BEGIN
+        MOCKUP, 0, 54, 0, 0, "..\..\Mockup.jpg"
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_DIALOG_TRAFFIC, DIALOG
+    BEGIN
+        RIGHTMARGIN, 123
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DIALOG_HISTORY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MY3GMODEMCONNECT_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_CON_MODE, 0x403, 8, 0
+0x4732, 0x4f20, 0x6c6e, 0x0079, 
+    IDC_COMBO_CON_MODE, 0x403, 13, 0
+0x4732, 0x5020, 0x6572, 0x6566, 0x7272, 0x6465, "\000" 
+    IDC_COMBO_CON_MODE, 0x403, 8, 0
+0x4733, 0x4f20, 0x6c6e, 0x0079, 
+    IDC_COMBO_CON_MODE, 0x403, 13, 0
+0x4733, 0x5020, 0x6572, 0x6566, 0x7272, 0x6465, "\000" 
+    IDC_COMBO_CON_MODE, 0x403, 4, 0
+0x6e41, 0x0079, 
+    IDC_COMBO_CON_BAND, 0x403, 12, 0
+0x5347, 0x284d, 0x3538, 0x4d30, 0x7a48, 0x0029, 
+    IDC_COMBO_CON_BAND, 0x403, 13, 0
+0x4745, 0x4d53, 0x3928, 0x3030, 0x484d, 0x297a, "\000" 
+    IDC_COMBO_CON_BAND, 0x403, 13, 0
+0x4750, 0x4d53, 0x3928, 0x3030, 0x484d, 0x297a, "\000" 
+    IDC_COMBO_CON_BAND, 0x403, 13, 0
+0x4344, 0x2853, 0x3831, 0x3030, 0x484d, 0x297a, "\000" 
+    IDC_COMBO_CON_BAND, 0x403, 13, 0
+0x4350, 0x2853, 0x3931, 0x3030, 0x484d, 0x297a, "\000" 
+    IDC_COMBO_CON_BAND, 0x403, 15, 0
+0x4357, 0x4d44, 0x2841, 0x3132, 0x3030, 0x484d, 0x297a, "\000" 
+    IDC_COMBO_CON_BAND, 0x403, 4, 0
+0x6e41, 0x0079, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_TRAY MENU
+BEGIN
+    POPUP "Tray"
+    BEGIN
+        MENUITEM "Show",                        ID_TRAY_SHOW
+        MENUITEM SEPARATOR
+        MENUITEM "Traffic",                     ID_TRAY_TRAFFIC
+        MENUITEM "History",                     ID_TRAY_HISTORY
+        MENUITEM "About...",                    ID_TRAY_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_TRAY_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About 3GModemConnect..."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE
+BEGIN
+    ID_STATUSBAR_CONSTATUS  "Disconnected"
+    ID_STATUSBAR_MODE       "UMTS"
+    ID_STATUSBAR_SIGNAL     "0%"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\My3GModemConnect.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
